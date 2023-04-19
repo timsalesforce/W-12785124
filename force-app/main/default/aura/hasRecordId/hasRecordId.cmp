@@ -1,3 +1,0 @@
-<aura:component implements="force:hasRecordId, flexipage:availableForAllPageTypes" access="global">
-    I am aura
-</aura:component>	
