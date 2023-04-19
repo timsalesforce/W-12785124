@@ -1,18 +1,17 @@
-# Salesforce DX Project: Next Steps
+# W-12785124 - Frozen Console after deleting a record
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Repro Steps
+1. Clone repository and create a scratch org
+2. Create 2 Accounts
+3. Make sure that the record page in use is Left_Pinned_Account
+4. Create a Lightning Console App
+5. Open both Accounts
+6. Open another browser window and delete one of the Accounts
+7. Go back to the original browser and refresh the workspace tab that holds the deleted account
+8. Observe an error in the tab
+9. Switch to the other Account Tab
+10. Switch back to the deleted Tab
+11. Switch back to the other Account Tab
 
-## How Do You Plan to Deploy Your Changes?
+The screen will be blank now, and the job queue will be deadlocked.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
