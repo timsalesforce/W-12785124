@@ -169,12 +169,6 @@
                 <identifier>runtime_sales_activities_activityPanel</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>hasRecordId</componentName>
-                <identifier>c_hasRecordId</identifier>
-            </componentInstance>
-        </itemInstances>
         <mode>Replace</mode>
         <name>activityTabContent</name>
         <type>Facet</type>
